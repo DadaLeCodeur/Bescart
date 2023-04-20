@@ -1,0 +1,245 @@
+/* Reset des styles par défaut du navigateur */
+  body, figure, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+    font-family: 	Courier;
+    text-align: center;
+  }
+
+  h1 {
+    text-align: center;
+    font-family: 	Courier;
+  }
+
+  .p4 {
+    margin: 0px;
+    text-align: left;
+
+  }
+
+
+  /* Styles de base */
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background:#777777;
+  }
+  
+  header {
+    height: 100vh;
+    background-image: url(img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background:#292929;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-size: 60px;
+  }
+  
+  .hero h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-size: 40px;
+  }
+  
+  .btn-primary {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin: -20px -50px; 
+    position:relative;
+    top:50%; 
+  }
+  
+  .btn-primary:hover {
+    background-color: #222;
+  }
+  
+  section {
+    padding: 4rem;
+  }
+  
+  section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul li {
+    border: 1px solid #ddd;
+    padding: 1rem;
+  }
+  
+  ul li img {
+    max-width: 100%;
+  }
+  
+  ul li h3 {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  input, textarea {
+    padding: 1rem;
+  }
+  
+  input[type="submit"] {
+    padding: 1rem 2rem;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #222;
+  }
+  
+  footer {
+    padding: 2rem;
+    text-align: center;
+    background-color: #ddd;
+  }
+  
+  .hero img{
+    scale: 100%;
+    margin: 0px;
+    margin-left: -200px; 
+    left: 250px;
+    position: absolute;
+    top: 50px; 
+  }
+
+  .box a{
+    outline: none;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: -40px;
+    margin-left: 10px;
+    width: 200px;
+    text-align: center;
+    line-height: 3;
+    color: black;
+    position: absolute;
+    top: 60px;
+  }
+
+  .box {
+    outline: none;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: -40px;
+    margin-left: 10px;
+    width: 200px;
+    text-align: center;
+    line-height: 3;
+    color: black;
+    position: absolute;
+  }
+
+  .box-1{
+  top: -400px;
+  left: 230px;
+  object-position: center;
+
+  }
+
+  .box-1 a:link, a:visited, a:focus {
+    background: rgb(111, 121, 216);
+  }
+
+  .box-1 a:hover {
+    background: rgb(160, 82, 224);
+  }
+  
+  .box-1 a:active {
+    background: red;
+    color: white;
+  }
+
+  .box-2{
+    top: -400px;
+    left: 10px;
+    object-position: center;
+  }
+
+  .box-2 a:link, a:visited, a:focus {
+    background: rgb(111, 121, 216);
+  }
+
+  .box-2 a:hover {
+    background: rgb(160, 82, 224);
+  }
+  
+  .box-2 a:active {
+    background: red;
+    color: white;
+  }
+
+  .box-3{
+    top: -400px;
+    left: -210px;
+    object-position: center;
+
+
+  }
+
+  .box-3 a:link, a:visited, a:focus {
+    background: rgb(111, 121, 216);
+  }
+
+  .box-3 a:hover {
+    background: rgb(160, 82, 224);
+  }
+  
+  .box-3 a:active {
+    background: red;
+    color: white;
+  }
+
+  .box-4{
+    top: -400px;
+    left: -430px;
+    object-position: center;
+
+
+  }
+
+  .box-4 a:link, a:visited, a:focus {
+    background: rgb(111, 121, 216);
+  }
+
+  .box-4 a:hover {
+    background: rgb(160, 82, 224);
+  }
+  
+  .box-4 a:active {
+    background: red;
+    color: white;
+  }

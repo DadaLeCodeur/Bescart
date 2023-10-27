@@ -1,245 +1,453 @@
 /* Reset des styles par défaut du navigateur */
-  body, figure, h2, h3, p, ul {
-    margin: 0;
-    padding: 0;
-    font-family: 	Courier;
-    text-align: center;
-  }
+body, figure, h2, h3, p, ul {
+  margin: 0;
+  padding: 0;
+  font-family: 	Courier;
+  text-align: center;
+}
 
-  h1 {
-    text-align: center;
-    font-family: 	Courier;
-  }
+p {
 
-  .p4 {
-    margin: 0px;
-    text-align: left;
+  font-size: 30px;
 
-  }
+}
+
+h1 {
+  text-align: center;
+  font-family: 	Courier;
+  color: #000;
+  size: 200%;
+  text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+
+.p4 {
+  margin: 0px;
+  text-align: left;
+
+}
 
 
-  /* Styles de base */
-  body {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
-    background:#777777;
-  }
-  
-  header {
-    height: 100vh;
-    background-image: url(img/hero.jpg);
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    background:#292929;
-  }
-  
-  .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    font-size: 60px;
-  }
-  
-  .hero h2 {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-    font-size: 40px;
-  }
-  
-  .btn-primary {
-    display: inline-block;
-    padding: 1rem 2rem;
-    background-color: #000;
-    color: #fff;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-    margin: -20px -50px; 
-    position:relative;
-    top:50%; 
-  }
-  
-  .btn-primary:hover {
-    background-color: #222;
-  }
-  
-  section {
-    padding: 4rem;
-  }
-  
-  section h2 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-  }
-  
-  ul {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  ul li {
-    border: 1px solid #ddd;
-    padding: 1rem;
-  }
-  
-  ul li img {
-    max-width: 100%;
-  }
-  
-  ul li h3 {
-    margin-top: 1rem;
-    font-size: 1.2rem;
-  }
-  
-  form {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-  
-  input, textarea {
-    padding: 1rem;
-  }
-  
-  input[type="submit"] {
-    padding: 1rem 2rem;
-    background-color: #000;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  input[type="submit"]:hover {
-    background-color: #222;
-  }
-  
-  footer {
-    padding: 2rem;
-    text-align: center;
-    background-color: #ddd;
-  }
-  
-  .hero img{
-    scale: 100%;
-    margin: 0px;
-    margin-left: -200px; 
-    left: 250px;
-    position: absolute;
-    top: 50px; 
-  }
+/* Styles de base */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 1.6;
+  background-color: #000000;
+}
 
-  .box a{
-    outline: none;
-    text-decoration: none;
-    display: inline-block;
-    margin-top: -40px;
-    margin-left: 10px;
-    width: 200px;
-    text-align: center;
-    line-height: 3;
-    color: black;
-    position: absolute;
-    top: 60px;
-  }
+header {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-repeat: no-repeat;
+  background-size: 110%;
+  background-position: -60px center;
+  box-shadow: 0px 50px 150px rgba(190, 190, 190, 0.658);
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url('moon-2048727_1920.jpg');
 
-  .box {
-    outline: none;
-    text-decoration: none;
-    display: inline-block;
-    margin-top: -40px;
-    margin-left: 10px;
-    width: 200px;
-    text-align: center;
-    line-height: 3;
-    color: black;
-    position: absolute;
-  }
+}
 
-  .box-1{
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 50px;
+  margin-top: 0px;
+  font-size: 200px;
+  animation: moveUpDown 10s linear infinite;
+}
+
+.hero h2 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  font-size: 40px;
+  color: #000;
+  text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+  animation: moveUpDown 7s linear infinite;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin: -20px -50px; 
+  position:relative;
+  top:0%; 
+  border-radius: 10px;
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+.btn-primary:hover {
+  background-color: rgb(111, 111, 111);
+}
+
+section {
+  padding: 6rem;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  border: 1px solid #ddd;
+  padding: 1rem;
+}
+
+ul li img {
+  max-width: 100%;
+  position: fixed;
+}
+
+ul li h3 {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.box-dropdown {
+
+  display: none;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+input, textarea {
+  padding: 1rem;
+}
+
+input[type="submit"] {
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #222;
+}
+
+footer {
+  padding: 2rem;
+  text-align: center;
+  background-color: #000000;
+}
+
+.hero img{
+  scale: 100%;
+  margin: 0px;
+  margin-left: -200px; 
+  left: 250px;
+  position: absolute;
+  top: 50px; 
+  position: fixed;
+  animation: moveUpDown 5s linear infinite;
+}
+
+@keyframes moveUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+.box {
+  outline: none;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: -40px;
+  margin-left: 0px;
+  width: 20px;
+  text-align: center;
+  line-height: 3;
+  color: rgb(0, 0, 0);
+  position: absolute;
+}
+
+.box a{
+  outline: none;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: -40px;
+  margin-left: 0px;
+  width: 200px;
+  text-align: center;
+  line-height: 3;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 60px;
+}
+
+.box-1{
+top: -400px;
+left: 230px;
+object-position: center;
+}
+
+.box-1 a:link, a:visited, a:focus {
+  background: rgb(0, 0, 0);
+  border-radius: 10px;
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+.box-1 a:hover {
+  background: rgb(110, 110, 110);
+}
+
+.box-1 a:active {
+  background: red;
+  color: white;
+}
+
+.box-2{
   top: -400px;
-  left: 230px;
+  left: 10px;
   object-position: center;
+}
+
+.box-2 a:link, a:visited, a:focus {
+  background: rgb(0, 0, 0);
+  border-radius: 10px;
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+.box-2 a:hover {
+  background: rgb(110, 110, 110);
+}
+
+.box-2 a:active {
+  background: red;
+  color: white;
+}
+
+.box-3{
+  top: -400px;
+  left: -210px;
+  object-position: center;
+}
+
+.box-3 a:link, a:visited, a:focus {
+  background: rgb(0, 0, 0);
+  border-radius: 10px;
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+.box-3 a:hover {
+  background: rgb(110, 110, 110);
+}
+
+.box-3 a:active {
+  background: red;
+  color: white;
+}
+
+.box-4{
+  top: -400px;
+  left: -430px;
+  object-position: center;
+}
+
+.box-4 a:link, a:visited, a:focus {
+  background: rgb(0, 0, 0);
+  border-radius: 10px;
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.705);
+}
+
+.box-4 a:hover {
+  background: rgb(110, 110, 110);
+}
+
+.box-4 a:active {
+  background: red;
+  color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.hidden-content {
+  display: none;
+}
+
+.text-container {
+  text-align: center; /* Pour centrer les boutons horizontalement */
+  font-family: Courier;
+}
+
+#show-more-button, #show-less-button {
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  padding: 10px 100px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto; /* Pour centrer les boutons horizontalement */
+  opacity: 0.9;
+  background: linear-gradient(rgb(114, 114, 114), rgb(0, 0, 0));
+  
+}
+
+
+
+.boutique-iframe {
+  height: 500px; /* Ajustez la hauteur selon vos besoins */
+  overflow: auto; /* Ajoutez la barre de défilement lorsque le contenu dépasse la hauteur */
+  box-shadow: 0 0px 200px #515151;
+  border-radius: 10px;
+}
+
+.contact ,textarea, input {
+
+  border-radius: 10px;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+
+  body {
+      font-size: 17px; /* Réduire la taille de la police */
+  }
+
+  p {
+      width: 130%;
+      margin-left: -40px;
+  }
+
+  .hero img {
+      scale: 50%;
+      left: 160px;
+      top: -20px;
 
   }
 
-  .box-1 a:link, a:visited, a:focus {
-    background: rgb(111, 121, 216);
+  header {
+       background-image: url("moon-2048727_1920.jpg");
+       background-size: 400%;
+       background-position: -700px center;
+       top: 40px ;
+       height: 1000px;
   }
 
-  .box-1 a:hover {
-    background: rgb(160, 82, 224);
+  .hero h1 {
+      font-size: 4rem; /* Réduire la taille de la police du titre */
+      margin-bottom: 30px; /* Ajuster la marge inférieure */
+      margin-top: -250px;
+      
+  }
+
+  .hero h2 {
+      font-size: 3rem;/* Réduire la taille de la police du sous-titre */
+      margin-top: 50px
+    
+  }
+
+  .btn-primary {
+      margin: 0; /* Ajuster les marges du bouton */
+      padding: 10px 20px; /* Ajuster le rembourrage du bouton */
+      font-size: 14px; /* Réduire la taille de la police du bouton */
+      top: 100px;
+      scale: 200%;
   }
   
-  .box-1 a:active {
-    background: red;
-    color: white;
+  .box-dropdown {
+    position: absolute;
+    top: 40px; /* Ajustez la distance depuis le haut de la page */
+    right: 40px; /* Ajustez la distance depuis la droite de la page */
+    z-index: 1000; /* Ajustez la profondeur de l'élément pour qu'il soit au-dessus d'autres éléments si nécessaire */
+    display: block;
   }
 
-  .box-2{
-    top: -400px;
-    left: 10px;
-    object-position: center;
+  .box-button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    scale: 150%;
   }
 
-  .box-2 a:link, a:visited, a:focus {
-    background: rgb(111, 121, 216);
+  .box-content {
+    display: none;
+    background-color: #000;
+    min-width: 160px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 100%; /* Placez-le juste en dessous du bouton */
+    right: 0; /* Alignez-le sur la droite */
   }
 
-  .box-2 a:hover {
-    background: rgb(160, 82, 224);
-  }
-  
-  .box-2 a:active {
-    background: red;
-    color: white;
+  .box-content a {
+    color: #fff;
+    padding: 10px 20px;
+    display: block;
+    text-decoration: none;
   }
 
-  .box-3{
-    top: -400px;
-    left: -210px;
-    object-position: center;
-
-
+  .box-content a:hover {
+    background-color: #222;
   }
 
-  .box-3 a:link, a:visited, a:focus {
-    background: rgb(111, 121, 216);
+  .box-1, .box-2, .box-3, .box-4{
+
+    display: none;
   }
 
-  .box-3 a:hover {
-    background: rgb(160, 82, 224);
-  }
-  
-  .box-3 a:active {
-    background: red;
-    color: white;
+  .larger-shop {
+    padding: 6rem;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden; /* Masquer le contenu qui dépasse */
+    margin-left: -90px;
+    margin-bottom: 0px;
   }
 
-  .box-4{
-    top: -400px;
-    left: -430px;
-    object-position: center;
+  .collection-1 img {
 
+      display: none;
 
   }
 
-  .box-4 a:link, a:visited, a:focus {
-    background: rgb(111, 121, 216);
+  .boutique-iframe {
+    height: 500px; /* Ajustez la hauteur selon vos besoins */
+    overflow: auto; /* Ajoutez la barre de défilement lorsque le contenu dépasse la hauteur */
+    box-shadow: 0 0px 100px #b8b8b8;
+    border-radius: 0px;
+    margin-left: -10px;
   }
+            
+      
 
-  .box-4 a:hover {
-    background: rgb(160, 82, 224);
-  }
-  
-  .box-4 a:active {
-    background: red;
-    color: white;
-  }
+}

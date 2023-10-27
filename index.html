@@ -23,7 +23,20 @@
                 </div>
             </nav>
         </div>
+
+    <div class="box-dropdown">
+        <button class="box-button">Menu</button>
+        <div class="box-content">
+            <a href="#collections">Collections</a>
+            <a href="#our-story">Our Story</a>
+            <a href="#shop">Shop</a>
+            <a href="#contact">Contact</a>
+        </div>
     </div>
+
+    <script src="script.js"></script>
+
+
         <div class="hero">
             <h1>BESCART</h1>
             <h2>YOUR STYLE, OUR PASSION</h2>
@@ -31,83 +44,37 @@
             <img src="clipart-moon-night-18_noir_et_blanc.png" alt="2" width="200" height="185">
         </div>
     </header>
-    <section id="collections">
+    
+    <section id="collections" class="collection-1">
         <h2>Collections</h2>
-        <ul>
-            <li>
-                <a href="#">
-                    <img src="img/collection-1.jpg" alt="Collection 1">
-                    <h3>Collection 1</h3>
-                </a>
-            </li>
-        </ul>
     </section>
     
     <section id="our-story">
         <h2>Our Story</h2>
-        <p>
-            We remember the time when we decided to create our own clothing brand. We were two friends who shared a passion for fashion. We had always wanted to create something sustainable and meaningful, and we decided that it would be our business.
-            We started by sketching our designs and spent hours searching for quality fabric suppliers. We spent many sleepless nights working on our business plan and marketing strategy, always keeping in mind our vision of offering ethical and sustainable clothing at affordable prices for young people.
-            We finally launched our clothing brand online, creating our own website and using social media to promote our products. We began selling t-shirts, sweatshirts, and denim pants, all made from eco-friendly and sustainable materials.
-        </p>
+        <div class="text-container">
+            <div class="visible-content">
+                <p>We remember the time when we decided to create our own clothing brand. We were two friends who shared a passion for fashion. We had always wanted to create something sustainable and meaningful, and we decided that it would be our business.</p>
+            </div>
+            <div class="hidden-content">
+                <p> started by sketching our designs and spent hours searching for quality fabric suppliers. We spent many sleepless nights working on our business plan and marketing strategy, always keeping in mind our vision of offering ethical and sustainable clothing at affordable prices for young people. We finally launched our clothing brand online, creating our own website and using social media to promote our products. We began selling t-shirts, sweatshirts, and denim pants, all made from eco-friendly and sustainable materials.</p>
+            </div>
+            <button id="show-more-button">Afficher plus</button>
+            <button id="show-less-button" style="display: none;">Afficher moins</button>
+        </div>
     </section>
     
-    <section id="shop">
+    
+    
+    <section id="shop" class="larger-shop">
 
         <h2>Shop</h2>
 
-<div style="max-width: 1040px; margin: 0 auto;">
-                <div>
+        <div style="max-width: 1040px; margin: 0 auto; max-height: 1000px;">
+            <div>
                 <a class="anchor" id="fitPrintAnchor" style="padding-top: 0px; margin-top: 0px;"></a>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.min.js"></script>
-                <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-                <script type="text/javascript">
-                  iFrameResize(
-                  {
-                    log: false,
-                    checkOrigin: false,
-                    heightCalculationMethod: 'grow',
-                    autoResize: false,
-                    onMessage: function(messageData) {
-                      var jsonData = JSON.parse(messageData.message);
-                      if (jsonData.action == 'navigateTo') {
-                        window.onbeforeunload = null;
-                        window.parent.location.href= jsonData.data;
-                      }
-                      if (jsonData.action == 'scrollTo') {
-                        setTimeout(function () {
-                          document.getElementById('fitPrintAnchor').scrollIntoView({behavior: 'smooth', block: 'center'});
-                        },200);
-                      }
-                },
-                    onInit: function(iframe)
-                    {
-                      $(document).ready(function()
-                      {
-          iframe.iFrameResizer = {
-                        $(window).on('scroll', () =>
-                        {
-                          const scrollFromTop = $(document).scrollTop();
-                          var fitPrintIframe = $("#fitPrintIframe");
-                          var offset = fitPrintIframe.offset();
-                          if (scrollFromTop > offset.top + 10)
-                          {
-                            iframe.iFrameResizer.sendMessage(scrollFromTop - (offset.top - 10));
-                          }
-                        });
-                      });
-                    }
-                  }, '#fitPrintIframe');
-                </script>
-                <br>
-                <iframe id="fitPrintIframe" frameborder="0" scrolling="no" src="https://shop.fitprint.io/v2.html?shop=0018d7e7-d3a4-4c5c-ad48-b070fa3fb18a" width="100%" onload="iFrameResize({ log: false, checkOrigin: false, heightCalculationMethod: 'grow', autoResize: false, onMessage: function(messageData) {var jsonData = JSON.parse(messageData.message);if (jsonData.action == 'navigateTo') {window.onbeforeunload = null;window.parent.location.href= jsonData.data;}if (jsonData.action == 'scrollTo') {setTimeout(function () {document.getElementById('fitPrintAnchor').scrollIntoView({behavior: 'smooth', block: 'center'});},200);}},onInit: function(iframe) { $(document).ready(function () { $(window).on('scroll', () => { const scrollFromTop = $(document).scrollTop(); var fitPrintIframe = $('#fitPrintIframe'); var offset = fitPrintIframe.offset(); if (scrollFromTop > offset.top + 10) { iframe.iFrameResizer.sendMessage(scrollFromTop - (offset.top - 10)); }if (scrollFromTop == 0 ) { iframe.iFrameResizer.sendMessage(scrollFromTop); }  }); }); }}, '#fitPrintIframe');"></iframe>
-                <style>
-                  iframe {
-                    width: 1px; min-width: 100%;
-                  }
-                </style>
-                </div>
-              </div>
+                <iframe id="fitPrintIframe" class="boutique-iframe" frameborder="0" scrolling="yes" src="https://shop.fitprint.io/v2.html?shop=0018d7e7-d3a4-4c5c-ad48-b070fa3fb18a" width="100%"></iframe>
+            </div>
+        </div>
 
 
     </section>
@@ -124,5 +91,8 @@
     <footer>
         <p>&copy; 2023 Bescart. All right reserved.</p>
     </footer>
-</body>
+    
+</body> 
 </html>
+
+
